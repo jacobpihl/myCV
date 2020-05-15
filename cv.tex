@@ -1,26 +1,9 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-% of this license or (at your option) any later version.
-% The latest version of this license is in http://www.latex-project.org/lppl.txt
-% and version 1.3 or later is part of all distributions of LaTeX
-%
-% This work has the LPPL maintenance status `maintained'.
-% 
-% The Current Maintainer of this work is Jacob Pihl.
-%
-% This work consists of the files cv.tex
-
 \documentclass[11pt,a4paper,sans,colorlinks,linkcolor=blue,urlcolor=blue]{moderncv}       
 
- % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}    
+\moderncvstyle{classic}
 % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}
 
@@ -41,11 +24,13 @@
 
 \usepackage[scale=0.90]{geometry}
 
-\address{Nyhemsgatan 38, 302 69}{Halmstad, Sweden}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{}{Gothenburg, Sweden}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+4670~172~62~75} % optional, remove / comment the line if not wanted
 \email{pihl.jacob@gmail.com}
 
-\extrainfo{\homepagesymbol\httplink{https://www.linkedin.com/in/jacob-pihl-3ba72a141/}}
+\extrainfo{
+    \homepagesymbol\httplink{https://www.linkedin.com/in/jacob-pihl-3ba72a141/}
+}
 
 \name{Jacob}{Pihl}
 
@@ -67,16 +52,13 @@
 %\section{Objective}
 %I strive to work in a fast changing and challenging working environment where i can use and increase my skills. I possess a wide knowledge in fleet management systems that could help to improve available products and let me grow with the company and drive the business into success.
 
-%\section{Qualification highlights}
-%I possess professional qualifications in programming where i have delivered applications both in Android and hardware close software. I am always on point and loyal towards my duties.
 \section{Work Experience}
-%\cventry{June 2017 -- December 2017 }{Software Engineer}{Drivec AB}{Helsingborg}{}{
-%\begin{itemize}
-%    \setlength{\itemindent}{.25in}
-%    \itemsep0.3em
-%    \item Integrating GPRS/GPS and CAN\footnotemark[1] hardware. Preparing data for machine learning solutions. Quality assurance work involving analyzing data from vehicles. Technology's used such as Node.js, Android.
-%\end{itemize} 
-%}
+\cventry{Aug 2019 -- May 2020}{Systems Developer}{Diadrom}{Gothenburg}{}
+{\begin{itemize}
+    \itemsep0.3em
+    \setlength{\itemindent}{.25in}
+    \item \textbf{Aug 2019 - Mar 2020}: Front end developer consultant at Volvo IT. Developing a multi-platform diagnostics application for trucks using web technologies. Project organization was SAFe and DevOps was used for continuous integration and deployment. (HTML, CSS, TypeScript, Polymer)
+\end{itemize}}
 
 \cventry{Mar 2015 -- May 2017}{Programming Teacher}{Halmstad City \& Halmstad University}{Halmstad}{}
 {\begin{itemize}
@@ -93,98 +75,57 @@
     \item Teaching assistant during computer labs in the Programming in Java course.
 \end{itemize}}
 
-\cventry{Jun 2012 -- Jul 2012}
-{Summer Worker}{SKF}{Gothenburg}{}
-{\begin{itemize}
-    \itemsep0.3em
-    \setlength{\itemindent}{.25in}
-    \item Maintained SKF's holiday resort.
-\end{itemize}}
-
-
-%%%% PROJECTS %%%%
-\section{Personal Projects}
-\cventry{Creator}{Lilla Matten}{Independent}{Sweden}{}
-{\begin{itemize}
-    \itemsep0.3em
-    \setlength{\itemindent}{.25in}
-    \item Created an educational math game for primary school children. (C\#, Unity)
-\end{itemize}}
-
-\cventry{Creator}{Website graphing tool}{Independent}{Sweden}{}
-{\begin{itemize}
-    \itemsep0.3em
-    \setlength{\itemindent}{.25in}
-    \item Created a web crawler for graphing internal connections on websites. (Python, HTML)
-\end{itemize}}
-
-%\cventry{Creator}{Web based service}{Independent}{Sweden}{}
+%\cventry{Jun 2012 -- Jul 2012}
+%{Summer Worker}{SKF}{Gothenburg}{}
 %{\begin{itemize}
 %    \itemsep0.3em
 %    \setlength{\itemindent}{.25in}
-%    \item Created a web crawler for graphing internal connections on websites.
+%    \item Maintained SKF's holiday resort.
+%\end{itemize}}
+
+
+%%%% PROJECTS %%%%
+%\section{Personal Projects}
+%\cventry{Creator}{Website graphing tool}{Independent}{Sweden}{}
+%{\begin{itemize}
+%    \itemsep0.3em
+%    \setlength{\itemindent}{.25in}
+%    \item Created a web crawler for graphing internal connections on websites. (Python, HTML)
 %\end{itemize}}
 
 %%%% EDUCATION %%%%%
 \section{Education}
 \cventry{2017--2019}{Master of Science in Engineering, Computer Science \& Engineering}{Halmstad University}{Sweden}{}
-%{\begin{itemize}
-%    \setlength{\itemindent}{.25in}
-%    \itemsep0.3em
-%    \item \textit{\textbf{Thesis:}} Robotic exercise coach.
-%\end{itemize}}
-{}
-
-\cventry{Feb 2018 -- Jul 2018}{Exchange Student MSc Computer Science \& Engineering}{Taiwan National University of Science and Technology}{Taiwan}{87/100 GPA}
 {\begin{itemize}
     \setlength{\itemindent}{.25in}
     \itemsep0.3em
-    \item \textit{\textbf{Built deep learning application - BiasedBot}}. Which rates people based on their attractiveness, trustworthiness, age, etc. (Python, Tensorflow, Keras)
+    \item \textit{\textbf{Thesis:}} Robotic exercise coach using Deep Learning technologies and machine learning. (Python, Tensorflow, ROS)
 \end{itemize}}
 
-\cventry{Sep 2017 -- Jan 2018}{Exchange Student BSc Computer Science \& Engineering}{Korea University}{South Korea}{80.5/100 GPA}
-{\begin{itemize}
-    \setlength{\itemindent}{.25in}
-    \itemsep0.3em
-    \item \textit{\textbf{Social Media Website}}. Created a small social media website for class. (PHP, HTML5/JS, CSS)
-    %\item \textit{\textbf{Built minimized version of C}}. Built a minimized version of the C programming language using the OCaml language.
-\end{itemize}}
+\cventry{Feb 2018 -- Jul 2018}{Exchange Student MSc Computer Science \& Engineering}{Taiwan National University of Science and Technology}{Taiwan}{87/100 GPA}{}
+
+\cventry{Sep 2017 -- Jan 2018}{Exchange Student BSc Computer Science \& Engineering}{Korea University}{South Korea}{80.5/100 GPA}{}
 
 \cventry{2014 -- 2017}{BSc with a major in Computer Science \& Engineering}{Halmstad University}{Sweden}{}
 {\begin{itemize}
     \setlength{\itemindent}{.25in}
     \itemsep0.3em
     \item \textit{\textbf{Thesis:}} Comparison of Computer Vision Algorithms. (Python, OpenCV, MATLAB)
-    %\item Partially responsible for the team building process for new students at the introduction week at the IT section fall 2015.
 \end{itemize}}
 
 \section{Language skills}
 Native Swedish speaker, fluent in English and intermediate Mandarin Chinese.
 \section{Technical skills}
-Main Operating systems (Intermediate): \textbf{Ubuntu, Microsoft}
+{Main Programming/Scripting Languages (Intermediate 1-3 years): \textbf{\textit{Java, JavaScript, TypeScript}}}
 \\
-{Main Programming/Scripting Languages (Intermediate 1-3 years): \textbf{\textit{Java, Python, JavaScript}}}
+{Other Programming/Scripting Languages (Basic < 1 year): \textbf{\textit{C\#}, Python, Dart}}
 \\
-{Other Programming/Scripting Languages (Basic < 1 year): \textbf{\textit{C, C\#}}}
+Other: \textbf{\textit{Git, DevOps, SAFe, Scrum, CI/CD}}
 \\
-Main Big Data Tools (Basic < 1 year): 
-\textbf{\textit{Postgresql}}
-\\
-Main Version Control \& IDE's: \textbf{\textit{Git, Android Studio, Jupyter Notebook}}
-\\
-%Certifications: \href{https://www.coursera.org/account/accomplishments/certificate/W5HM63ABYCDV}{\textbf{\textsc{\underline{[Coursera - Machine Learning]}}}}
-\\
-%Publications: \href{}{\textbf{\textsc{\underline{[Thesis - Diva Portal]}}}}
+Publications: \href{https://arxiv.org/abs/1909.12262}{\textbf{\textsc{Exercising with an "Iron Man": Design for a Robot Exercise Coach for Persons with Dementia}}}
 
 \section{References}
-Portfolio: \underline{\href{https://github.com/jacobpihl}{\textbf{\textsc{[GitHub]}}}},
-\underline{\href{https://play.google.com/store/apps/details?id=com.PihlApps.LillaMatten}{\textbf{\textsc{[Lilla Matten]}}}}\\
-%Honors \& Awards: \href{https://www.hms-networks.com/work/in/sweden/hms-scholarship}{\textbf{\underline{[Scholarship - Best Thesis]}}} \href{http://www.hh.se/omhogskolan/aktuellt/nyheter/nyheter/studenterbelonasavsparbanksstiftelsenkronan.65446700.html}{\textbf{\underline{[Scholarship - Sparbanken Kronan]}}}
-
-%\vfill
-%\enlargethispage{\footskip}
-%\footnotetext[1]{CAN - Controller Area Network}
-%\footnotetext[2]{ITMS MLA - Indirect Tire Monitoring System - Machine Learning Approach}
+Portfolio: \href{https://github.com/jacobpihl}{\textbf{\textsc{GitHub}}}
 
 \end{document}
 %% end of file `cv.tex'.
