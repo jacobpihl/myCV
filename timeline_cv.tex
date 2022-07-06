@@ -1,0 +1,157 @@
+\documentclass[a4paper]{twentysecondcv} % a4paper or latterpaper
+\usepackage{anyfontsize}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\LARGE}{\rlap{\color{white}\rule[-0.4cm]{\linewidth}{.5cm}} \thesection}{0.5em}{}
+%-------------
+%	 PERSONAL INFORMATION
+%-------------
+
+\profilepic{} % Profile picture
+
+\cvname{Jacob Pihl} % Your name
+\cvjobtitle{Software Developer} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Gothenburg} % Short address/location
+\cvnumberphone{+46 701 72 62 75} % Phone number
+\cvsite{} % Personal website
+\cvmail{pihl.jacob@gmail.com} % Email address
+\cvlinkedin{jacob-pihl-3ba72a141} % Linkedin user account
+\cvgithub{jacobpihl}
+
+%-------------
+
+\begin{document}
+
+\intro{Welcome to my CV!\\I'm happy you found your way here!}
+
+%-------------
+%  PROFILE
+%-------------
+
+%\profile{Profile}{Jacob is an amazing person bla bla bla}
+
+%-------------
+%  ABOUT ME
+%-------------
+
+\aboutme{About}
+{
+\hspace{1em}
+I'm a person who does not accept failure from a lack of knowledge. Because of this I strive to always learn more about what I'm currently pursuing.\\
+
+Add to this a desire to always keep things moving and you get a person who works fast and efficiently without compromising quality.\\
+
+In daily life I do a lot of cooking and food exploring, then I enjoy going to the gym to offset it all.}
+
+%-------------
+%  INTERESTS
+%-------------
+
+%\interest{At a glance}{
+%    \begin{itemize}
+%        \item Speaks decent Chinese
+%        \item Fast learner
+%    \end{itemize}
+    
+%    \vspace{.5em}
+    
+%    \makeQuote
+%    {Where did you find this guy! [He's amazing]}
+%    {Senior Systems Architect}
+%}
+
+\makeprofile % Print the sidebar
+
+%-------------
+%  EXPERIENCE
+%-------------
+
+\section{Work Experience}
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitemtime
+    {mainblue}{white}
+    {Aug 2020}{Present}
+    {Lead Systems Developer}
+    {Swegon, Gothenburg}
+    {\begin{itemize}
+        \setlength\itemsep{.5em}
+        \item {\textbf{Jun 2021 - Present}\\Lead developer for Swegons brand new "Wise" HVAC systems designer. Coordinated implementation and development across different teams. (Blazor, .Net)}
+        \item {\textbf{Aug 2020 - May 2021}\\Full-stack developer for Swegons React-based HVAC design tool. Optimized and improved performance of the tool, making it about 10 times faster then before. (React, Typescript)}
+    \end{itemize}}
+    
+    \twentyitemtime
+    {mainblue}{mainblue}
+    {Aug 2019}{Jun 2020}
+    {Systems Developer}
+    {Diadrom, Gothenburg}
+    {\makeList{
+        Front end developer consultant at Volvo IT. Worked on a multi-platform diagnostics application for trucks using web technologies. (TypeScript, Polymer)
+    }}
+    
+    \\
+    
+    \twentyitem
+    {2015-2017}
+    {Programming Teacher}
+    {Halmstad University, Halmstad}
+    {Taught kids and adults how to program using Scratch in cooperation with Halmstad City.}
+\end{twenty}
+
+%-------------
+%  OWN PROJECTS
+%-------------
+
+\section{Personal Projects}
+\begin{twenty}
+    \twentyitem
+    {Co-Maintainer}
+    {TabBlazor}
+    {\href{http://tabblazor.com}{tabblazor.com}}
+    {Co-maintainer/developer for TabBlazor, an open source component library for Blazor.}
+    
+    \twentyitem
+    {Creator}
+    {Sauna booking tool}
+    {}
+    {Created a web-based booking tool for the community sauna at my parents' summer house. (Web, Python)}
+\end{twenty}
+
+%-------------
+%  EDUCATION
+%-------------
+
+\section{Education}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitemtime
+	{mainblue}{mainblue}
+	{Sep 2017}{Jun/2019}
+	{M.Sc. Computer Science \& Engineering}
+	{Halmstad University}
+	{\begin{itemize}
+	    \setlength\itemsep{.5em}
+    	\item {
+    	    \textbf{Aug 2018 - Jun 2019}\\
+    	    Thesis work at Halmstad University, Sweden\\
+    	    \href
+    	    {https://ieeexplore.ieee.org/abstract/document/9223552}
+    	    {Exercising with an "Iron Man"}
+    	}
+        \item {\textbf{Feb 2018 - Jul 2018}\\Exchange student at NTUST, Taipei, Taiwan}
+        \item {\textbf{Sep 2017 - Jan 2018}\\Exchange student at Korea University, Seoul, Korea}
+    \end{itemize}}
+    
+    \\
+    
+	\twentyitem
+	{2014-2017}
+	{B.Sc. in Computer Science \& Engineering}
+	{Halmstad University}
+	{\makeList{
+	    \textit{Thesis:} Comparison of Computer Vision Algorithms
+	}}
+\end{twenty}
+
+\end{document} 
