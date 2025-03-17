@@ -129,6 +129,8 @@
 \setboolean{cv@interest}{false}
 \newboolean{cv@profile}
 \setboolean{cv@profile}{false}
+\newboolean{cv@tags}
+\setboolean{cv@tags}{false}
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
@@ -157,6 +159,12 @@
 \end{justify}%
 }}
 \newcommand{\profile}[2]{\setboolean{cv@profile}{true}\renewcommand{\profile}{%
+\profilesection{#1}
+\begin{justify}%
+#2%
+\end{justify}%
+}}
+\newcommand{\tags}[2]{\setboolean{cv@tags}{true}\renewcommand{\tags}{%
 \profilesection{#1}
 \begin{justify}%
 #2%
@@ -239,6 +247,10 @@
 	    \ifthenelse{\boolean{cv@interest}}{
 	        \emergencystretch=3em
 	        \interest
+	    }{}
+            \ifthenelse{\boolean{cv@tags}}{
+	        \emergencystretch=3em
+	        \tags
 	    }{}
 		
 

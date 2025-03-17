@@ -1,7 +1,21 @@
 \documentclass[a4paper]{twentysecondcv} % a4paper or latterpaper
 \usepackage{anyfontsize}
 \usepackage{titlesec}
-\usepackage{CJKutf8}
+
+\usepackage[most]{tcolorbox}
+\newtcbox{\badge}[1][blue]{
+  on line, 
+  arc=2pt,
+  colback=#1!50!black,
+  colframe=#1!50!black,
+  fontupper=\color{white},
+  boxrule=1pt, 
+  boxsep=0pt,
+  left=6pt,
+  right=6pt,
+  top=2pt,
+  bottom=2pt
+}
 
 \setcounter{secnumdepth}{0}
 \titleformat{\section}{\LARGE}{\rlap{\color{white}\rule[-0.4cm]{\linewidth}{.5cm}} \thesection}{0.5em}{}
@@ -36,35 +50,47 @@
 %  PROFILE
 %-------------
 
-%\profile{Profile}{Jacob is an amazing person bla bla bla}
+\profile{About me}
+{\hspace{1em}
+I'm an exploring individual who likes sailing and try my best to stay active. Always eager to try new things and thrive in dynamic environments where there is lots of change and growth.
+
+Professionally I value progress and usually feel the most fulfilled when I'm actively involved in exciting projects and challenges. Preferably with an opportunity to expand my understanding along the way.
+}
 
 %-------------
 %  ABOUT ME
 %-------------
 
-\aboutme{About me}
-{\hspace{1em}
-I love learning and always want to keep things moving. So I try always try to work fast and efficiently without compromising quality.\\
-
-In daily life I enjoy sailing, exercising and spending time with friends and family.
+\aboutme{Education}{
+B.Sc. \& M.Sc. in Computer Science \& Engineering from Halmstad University
 }
 
 %-------------
 %  INTERESTS
 %-------------
 
-%\interest{At a glance}{
-%    \begin{itemize}
-%        \item Speaks decent Chinese
-%        \item Fast learner
-%    \end{itemize}
-    
-%    \vspace{.5em}
-    
-%    \makeQuote
-%    {Where did you find this guy! [He's amazing]}
-%    {Senior Systems Architect}
-%}
+\interest{Language}{
+Swedish - Native \\
+English - Professional Proficiency \\
+Mandarin Chinese - Moderate
+}
+
+%-------------
+%    TAGS
+%-------------
+
+\tags{Tags}
+{
+\badge{dotnet}      \badge{C\#}         \badge{Blazor}
+\badge{Azure}       \badge{RabbitMQ}    \badge{CQRS}
+\badge{Terraform}   \badge{GraphQL}     \badge{React}
+\badge{Docker}      \badge{Linode}      \badge{Docker Compose}
+\badge{Git}         \badge{NextJs}      \badge{Vercel}
+\badge{Cosmos DB}   \badge{Traefik}     \badge{Flutter}
+\badge{Postgres}    \badge{SQL}         \badge{NoSQL}
+\badge{Redux}       \badge{Typescript}  \badge{CSS}
+\badge{DevOps}      \badge{CI/CD}       \badge{Redis}
+}
 
 \makeprofile % Print the sidebar
 
@@ -77,35 +103,43 @@ In daily life I enjoy sailing, exercising and spending time with friends and fam
     \twentyitemtime
     {mainblue}{white}
     {Aug 2020}{Present}
-    {Lead Developer - Fullstack}
-    {Swegon, Gothenburg}
+    {Swegon}
+    {Gothenburg}
     {
     \\
-    \textbf{Mar 2024 - Present}
-    \begin{itemize}
-        \setlength\itemsep{.5em}
-        \item Developed Swegon's \href{https://sweflow.swegon.com/}{Sweflow} app (React, .Net, Azure)
-        \item Created process and tool to migrate customer data from legacy systems.
-    \end{itemize}
+    \textbf{Fullstack/Lead developer \& DevOps}
+    \\
+    \textit{Oct 2024 - Present}
+    \\
+    Worked on Swegons new solution for partner companies, allowing them to buy and sell Swegons products in an Ecom-like fashion. Communicated with stakeholders \& other relevant people to determine requirements and scope for this new solution. Used Microsoft based stack. (dotnet, Blazor, Azure, GraphQL, MSSQL)
+
+    \vspace{1em}
+    
+    \textbf{Fullstack/Lead developer \& DevOps}
+    \\
+    \textit{Mar 2024 - Oct 2024}
+    \\
+    Re-developed Swegon's \href{https://sweflow.swegon.com/}{Sweflow} app as a traditional web-app with a frontend (React) and a backend (dotnet), both deployed via Azure using Terraform.
+    
+    Created a process and a tool to migrate all commissioned Swegon "Wise" systems from the deprecated "Wise" system designer to the brand new one.
 
     \vspace{1em}
 
-    \textbf{Jun 2021 - Mar 2024}
-    \begin{itemize}
-        \setlength\itemsep{.5em}
-        \item Lead developer for Swegon's "Wise" systems designer (Blazor, .Net, Azure).
-        \item Coordinated implementation and development across different teams.
-        \item Responsible for mentoring student interns \& on-boarding new team members.
-    \end{itemize}
+    \textbf{Fullstack/Lead developer \& DevOps}
+    \\
+    \textit{Jun 2021 - Mar 2024}
+    \\
+    Worked with UI/UX designers, product specialists and 2 development teams to create Swegons new "Wise" systems designer. Coordinated and collaborated with different teams to ensure feature parity with the old software and to develop brand new features. Mentored and taught a student in the team. Used Microsoft based stack with CQRS. (dotnet, Blazor, Azure, RabbitMQ, Terraform)
     
     \vspace{1em}
     
-    \textbf{Aug 2020 - May 2021}
-    \begin{itemize}
-        \setlength\itemsep{.5em}
-        \item Used React based stack. (React, Typescript, Redux)
-        \item Improved application performance by 10 times.
-    \end{itemize}
+    \textbf{Front-end developer}
+    \\
+    \textit{Aug 2020 - May 2021}
+    \\
+    Maintained and improved Swegons legacy product picker \& simulator software.
+    Worked on improvements to the applications performance bringing it from completely unusable to a decent user experience in some scenarios.
+    Used React based stack. (React, Redux, Typescript)
     }
     
     \vspace{.5em}
@@ -113,10 +147,10 @@ In daily life I enjoy sailing, exercising and spending time with friends and fam
     \twentyitemtime
     {mainblue}{mainblue}
     {Aug 2019}{Jun 2020}
-    {Systems Developer}
-    {Diadrom, Gothenburg}
-    {Front end focused developer consultant at Volvo IT.
-    \\ Worked on a multi-platform diagnostics application for trucks using web tech. (TypeScript, Polymer)}
+    {Diadrom}
+    {Gothenburg}
+    {Front end focused developer consultant at Volvo IT. \\
+    Worked on a multi-platform diagnostics application for trucks using web tech. (TypeScript, Polymer)}
     
     \\
     
@@ -146,39 +180,49 @@ In daily life I enjoy sailing, exercising and spending time with friends and fam
     {Co-maintainer \& developer for TabBlazor, an open source component library for Blazor.}
 \end{twenty}
 
+\begin{twenty}
+    \twentyitem
+    {Developer}
+    {BankId Clone}
+    {}
+    {Developed a clone of the Swedish BankID app and system using dotnet, Flutter, Docker, Traefik, RabbitMq. Deployment to Linode and Vercel using Github Actions}
+\end{twenty}
+
 %-------------
 %  EDUCATION
 %-------------
 
-\section{Education}
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitemtime
-	{mainblue}{mainblue}
-	{Sep 2017}{Jun 2019}
-	{M.Sc. Computer Science \& Engineering}
-	{Halmstad University}
-	{\begin{itemize}
-	    \setlength\itemsep{.5em}
-    	\item {
-    	    \textbf{Aug 2018 - Jun 2019}\\
-    	    Thesis work at Halmstad University, Sweden\\
-    	    \href
-    	    {https://ieeexplore.ieee.org/abstract/document/9223552}
-    	    {Exercising with an "Iron Man"}
-    	}
-        \item {\textbf{Feb 2018 - Jul 2018}\\Exchange student at NTUST, Taipei, Taiwan (R.O.C)}
-        \item {\textbf{Sep 2017 - Jan 2018}\\Exchange student at Korea University, Seoul, South Korea}
-    \end{itemize}}
+% \section{Education}
+% \begin{twenty} % Environment for a list with descriptions
+%     \twentyitemtime
+%     {mainblue}{mainblue}
+%     {Sep 2017}{Jun 2019}
+%     {M.Sc. Computer Science \& Engineering}
+%     {Halmstad University}
+%     {Masters degree with exchange semesters to South Korea \& Taiwan}
+%     % {\begin{itemize}
+%     %     \setlength\itemsep{.5em}
+%     %     \item {
+%     %         \textbf{Aug 2018 - Jun 2019}\\
+%     %         Thesis work at Halmstad University, Sweden\\
+%     %         \href
+%     %         {https://ieeexplore.ieee.org/abstract/document/9223552}
+%     %         {Exercising with an "Iron Man"}
+%     %     }
+%     %     \item {\textbf{Feb 2018 - Jul 2018}\\Exchange student at NTUST, Taipei, Taiwan (R.O.C)}
+%     %     \item {\textbf{Sep 2017 - Jan 2018}\\Exchange student at Korea University, Seoul, South Korea}
+%     % \end{itemize}}
     
-    \\
+%     \\
     
-	\twentyitem
-	{2014-2017}
-	{B.Sc. in Computer Science \& Engineering}
-	{Halmstad University}
-	{\makeList{
-	    \textit{Thesis:} Comparison of Computer Vision Algorithms
-	}}
-\end{twenty}
+%     \twentyitem
+%     {2014-2017}
+%     {B.Sc. in Computer Science \& Engineering}
+%     {Halmstad University}
+%     {Bachelors degree}
+%     % {\makeList{
+%     %     \textit{Thesis:} Comparison of Computer Vision Algorithms
+%     % }}
+% \end{twenty}
 
 \end{document} 
